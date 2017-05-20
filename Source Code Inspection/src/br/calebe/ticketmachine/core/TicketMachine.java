@@ -14,9 +14,9 @@ public class TicketMachine {
     protected int saldo;
     protected int[] papelMoeda = {2, 5, 10, 20, 50, 100};
 
-    public TicketMachine(int valor) {
+    public TicketMachine(int precoDoBilhete ) {
         this.valor = valor;
-        this.saldo = 0;
+        this.saldo = precoDoBilhete ;
     }
 
     public void inserir(int quantia) throws PapelMoedaInvalidaException {
