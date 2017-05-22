@@ -13,7 +13,7 @@ import java.util.Iterator;
 public class TicketMachine {
 
     protected int valor;
-    protected int saldo;
+    protected int saldo;    
     protected int[] papelMoeda = {2, 5, 10, 20, 50, 100};
 
     public TicketMachine(int precoDoBilhete ) {
@@ -39,7 +39,7 @@ public class TicketMachine {
     }
 
     public TrocoIterator getTroco() {
-        return null;
+        return Troco;
     }
 
     public String imprimir() throws SaldoInsuficienteException {
