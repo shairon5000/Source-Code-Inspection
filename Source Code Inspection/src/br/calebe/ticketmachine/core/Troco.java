@@ -44,7 +44,7 @@ class Troco {
         papeisMoeda[0] = new PapelMoeda(2, count);
     }
 
-    public Iterator<PapelMoeda> getIterator() {
+    public TrocoIterator getIterator() {
         return new TrocoIterator(this);
     }
 
@@ -52,7 +52,7 @@ class Troco {
 
         protected Troco troco;
 
-        public TrocoIterator(Troco troco) {
+        public TrocoIterator(Troco troco) { 
             this.troco = troco;
         }
 
