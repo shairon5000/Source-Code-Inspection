@@ -38,8 +38,8 @@ public class TicketMachine {
         return saldo;
     }
 
-    public TrocoIterator getTroco() {
-        return Troco;
+    public int[] getTroco() {
+        return papelMoeda;
     }
 
     public String imprimir() throws SaldoInsuficienteException {
