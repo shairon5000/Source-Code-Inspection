@@ -66,6 +66,9 @@ class Troco {
             return false;
         }
 
+        
+        
+        
         @Override
         public PapelMoeda next() {
             PapelMoeda ret = null;
