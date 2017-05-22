@@ -50,7 +50,7 @@ class Troco {
 
     class TrocoIterator implements Iterator<PapelMoeda> {
 
-        //protected Troco troco;
+        protected Troco troco;
 
         public TrocoIterator(Troco troco) { 
             this.troco = troco;
@@ -78,9 +78,6 @@ class Troco {
             return ret;
         }
 
-        @Override
-        public void remove() {
-            next();
-        }
+       
     }
 }
