@@ -71,7 +71,7 @@ class Troco {
         
         @Override
         public PapelMoeda next() {
-            PapelMoeda ret = null;
+            PapelMoeda ret = PapelMoeda();
             for (int i = 6; i >= 0 && ret != null; i++) {
                 if (troco.papeisMoeda[i] != null) {
                     ret = troco.papeisMoeda[i];
@@ -79,6 +79,10 @@ class Troco {
                 }
             }
             return ret;
+        }
+
+        private PapelMoeda PapelMoeda() {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         }
 
        
